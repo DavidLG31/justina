@@ -2,7 +2,7 @@ spring:
   application:
     name: justina
   datasource:
-    url: ${DATASOURCE}?createDatabaseIfNotExist=true
+    url: ${HOST}:${PORT}/${DBNAME}?createDatabaseIfNotExist=true
     username: ${USER}
     password: ${PASSWORD}
   jpa:
